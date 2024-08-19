@@ -123,17 +123,7 @@ html,body{
 #nav-part2 h4{
     font-weight: 200;
 }
-#page2{
-    width: 100%;
-    height: 100vh;
-    background-color: #151515;
-}
-#page3{
-    width: 100%;
-    height: 100vh;
-    background-color: #151515;
-    
-}
+
 .hero{
     /* background-color: red; */
     margin-left: 27%;
@@ -157,9 +147,210 @@ html,body{
     text-transform: uppercase;
     line-height: 7.5vw;
     font-weight: 600;
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 1vw;
 }
 .hero h2:hover{
     -webkit-text-stroke: 1px white;
     color: transparent;
     font-weight: 500;
+    border-bottom: 0.5vw solid #ffffff00;
 }
+/* page 2 */
+#page2{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+    padding-top: 7vw;
+}
+#video-container{
+    width: 72vw;
+    height: 65vh;
+    margin-left: 27%;
+    position: relative;
+}
+#video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+} 
+#video-container img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+#video-cursor{
+    width: 8vw;
+    height: 8vw;
+    background-color: #ffa63d;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#video-cursor i{
+    font-size: 2vw;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    background-color: #2e2e2e;
+    
+}
+#page4{
+    /* width: 100%; */
+    min-height: 100vh;
+    background-color: #151515;
+    margin-top: 5vw;
+    position: relative;
+
+}
+#page4-content{
+    width: 72vw;
+    height: 240vh;
+    position: relative;
+    margin-left: 28%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 3vw;
+    
+}
+#page4-content>h1{
+    font-size: 7.3vw;
+    text-transform: uppercase;
+    padding-bottom: 5vw;
+    font-weight: 600;
+}
+#underline{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+#page4-content>p{
+    padding-top: 3vw;
+    width: 50%;
+    font-size: 2.3vw;
+    line-height: 2.7vw;
+}
+#flex-box{
+    display: flex;
+    margin-top: 4vw;
+}
+#flex-box img{
+    width: 45%;
+    height: 40%;
+    object-fit: cover;
+}
+#flex-box p{
+    width: 28%;
+    padding-left: 2vw;
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+#blue-box{
+    width: 45%;
+    /* height: fit-content; */
+    background-color: #3f7df4;
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 32%;
+    padding: 3vw 0;
+    padding-bottom: 5vw;
+}
+.bluebox-text{
+    width: 25vw;
+    height: 7vw;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vw 3.5vw;
+    gap: 2vw;
+    /* background-color: #ffa63d; */
+}
+.bluebox-text h1{
+    font-size: 1.6vw;
+    width: 50%;
+    font-weight: 500;
+}
+.bluebox-text h2{
+    font-size: 1vw;
+    font-weight: 500;
+    width: 50%;
+}
+#bottom-underline{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 10%;
+}
+body{
+    overflow-x: hidden;
+}
+#page5{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5vw;
+     
+}
+.elem-text{
+    /* background-color: red; */
+   white-space: nowrap;
+   
+}
+.elem-text h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    animation-name: text-anime;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+    
+ }
+ .elem-text2{
+    /* background-color: red; */
+   white-space: nowrap;
+   
+}
+.elem-text2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    animation-name: text-anime;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: reverse;
+    
+ }
+ .elem-text span{
+    font-family: silk serif;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+ }
+ .elem-text2 span{
+    font-family: silk serif;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+ }
+ @keyframes text-anime {
+    0%{
+       transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 4px));
+    }
+ }
