@@ -9,16 +9,11 @@ html,body{
     width: 100%;
     height: 100%;
 }
-#crsr{
-    width: 2.4vw;
-    height: 2.4vw;
-    border-radius: 50%;
-    border: 1px rgb(218, 218, 218) solid;
-    /* background-color: #fff; */
-    position: fixed;
-    z-index: 999;
-    mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
+.mousefollower{
+   border: 2px solid #fff;
+   background-color: rgb(225, 225, 225);
+   scale:2;
+   mix-blend-mode: difference;
 }
 #loader{
     width: 100%;
@@ -103,7 +98,7 @@ html,body{
 }
 #page1{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #151515;
 }
 #nav{
@@ -159,7 +154,7 @@ html,body{
     line-height: 7.5vw;
     font-weight: 600;
     border-bottom: 0.5vw solid #fff;
-    padding-bottom: 1vw;
+    padding-bottom: 0vw;
 }
 .hero h2:hover{
     -webkit-text-stroke: 1px white;
@@ -167,12 +162,27 @@ html,body{
     font-weight: 500;
     border-bottom: 0.5vw solid #ffffff00;
 }
+#page1 img{
+    height: 20vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translate("-50%,-50%");
+}
+#hero3{
+    z-index: 999;
+    position: relative;
+}
 /* page 2 */
 #page2{
     width: 100%;
     height: 100vh;
     background-color: #151515;
-    padding-top: 7vw;
+    padding-top: 3vw;
+    /* margin-top: 11vw; */
+    /* margin-bottom: 6vw; */
+
 }
 #video-container{
     width: 72vw;
@@ -184,7 +194,6 @@ html,body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
 } 
 #video-container img{
     width: 100%;
@@ -194,13 +203,13 @@ html,body{
     object-fit: cover;
 }
 #video-cursor{
-    width: 8vw;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
     background-color: #ffa63d;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 80%;
+    top: -15%;
+    left: 70%;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -211,17 +220,210 @@ html,body{
 }
 #page3{
     width: 100%;
-    height: 100vh;
-    background-color: #2e2e2e;
+    min-height: 150vh;
+    /* background-color: #2e2e2e; */
+    position: relative;
+    padding: 17vh 2vw;
+    padding-bottom: 15vw;
+    padding-top: 18vw;
+    margin-top: 5vw;
+    /* background-color: #ffa63d; */
     
+}
+#page3>h1{
+    font-size: 7.3vw;
+    text-transform: uppercase;
+    padding-bottom: 5vw;
+    font-weight: 600;
+    position: relative;
+    padding-left: 28vw;
+}
+#page3>h1::before{
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 18%;
+    top: 6%;
+ }
+#page3 .underline{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 28vw;
+
+}
+#page3-img-container{
+    padding: 5vw 2vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* background-color: #ffa63d; */
+}
+.img-div{
+    height: 40vw;
+    width: 31vw;
+    background-color: blue;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-top: 2vw;
+    
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#img-div1{
+    /* background-color:yellow; */
+    padding: 1vw;
+    margin: 0vw;
+}
+#img-div1 .img-div{
+    height: 29vw;
+    width: 23vw;
+    margin-top: 2vw;
+}
+#img-div1 h1{
+     font-size: 2.5vw;
+}
+.img-div-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+}
+.img-div-bottom h5{
+    font-weight: 400;
+    font-size: 0.98vw;
+    line-height: 1.5vw;
+
+}
+.img-div-main h1{
+   font-size: 2.5vw;
+}
+.img-div-main{
+    padding: 1vw;
+
+}
+#page3-img-container .underline{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-left: 0vw;
+
+}
+.page3-circle1{
+    height: 23vw;
+    width: 23vw;
+    border-radius: 50%;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70vh;
+    margin-left: 8vw;
+    position: relative;
+}
+.page3-circle1 svg{
+    height: 30%;
+
+}
+.page3-circle2{
+    height: 22vw;
+    width: 22vw;
+    border-radius: 50%;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 23vh; */
+    /* margin-left: 10vw; */
+    position: relative;
+    margin: 1.5vw;
+
+}
+.page3-circle2 svg{
+    height: 30%;
+    rotate: -45deg;
+}
+.circle-in{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    scale: 0;
+    transition: all ease 0.3s;
+}
+.circle-in p{
+       font-size: 0.95vw;
+       color: #000;
+       font-weight: 500;
+       width: 60%;
+       scale: 0;
+       transition: all ease 0.3s;
+       transition-delay: 0.3s;
+       opacity: 0;
+}
+.page3-circle1:hover .circle-in{
+    scale: 1;
+}
+.page3-circle1:hover .circle-in p{
+    scale: 1;
+    opacity: 1;
+}
+.page3-circle2:hover .circle-in{
+    scale: 1;
+}
+.page3-circle2:hover .circle-in p{
+    scale: 1;
+    opacity: 1;
+    text-align: center;
+}
+#img-div3{
+    margin-top: 5vw;
+}
+#img-div4{
+    margin-top: -2vw;
+}
+
+#orange-circle{
+    height: 22vw;
+    width: 22vw;
+    border-radius: 50%;
+    background-color: #ffa63d;
+    margin: 10vw 0;
+    margin-bottom: 15vw;
+    
+    /* transform: translateX(180%); */
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.2s;
+}
+#orange-circle h3{
+    font-weight: 500;
+}
+#orange-circle:hover{
+    scale: 0.8;
 }
 #page4{
     /* width: 100%; */
     min-height: 100vh;
     background-color: #151515;
-    margin-top: 5vw;
     position: relative;
-
+    margin: 25vw 0;
+    
 }
 #page4-content{
     width: 72vw;
@@ -239,7 +441,7 @@ html,body{
     font-weight: 600;
     position: relative;
 }
-#page4-content h1::before{
+#page4-content>h1::before{
     content: "03";
     position: absolute;
     font-size: 3vw;
@@ -316,7 +518,7 @@ body{
 }
 #page5{
     width: 100%;
-    min-height: 100vh;
+    height: 120vh;
     padding-top: 5vw;
      
 }
@@ -380,6 +582,7 @@ body{
     width: 100%;
     position: relative;
     padding-left: 28vw;
+    margin-top: 10vw;
     /* background-color: #3f7df4; */
  }
  #footer h1{
